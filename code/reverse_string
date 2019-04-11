@@ -1,0 +1,18 @@
+#! /usr/bin/env python3
+
+def Reverse(arr, head, end):
+	while head < end:
+		arr[head], arr[end] = arr[end], arr[head]
+		head += 1
+		end -= 1
+
+def ReverseSentence(arr):
+	arr_len = len(arr)
+	if arr_len == 0:
+		return arr
+
+	head = 0
+	end = arr_len - 1
+	Reverse(arr, head, end)
+
+	

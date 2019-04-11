@@ -338,9 +338,7 @@
   * 当x的真实类别为$C_i$时，则该向量的第i个分量为1，其余分量均为0，并将它们作为“真实”的概率。
 
   * 这样以后可以定义一个关于概率向量预测量$\hat{\mathbf{p}}(x)=(\hat{p}_1(x),...,\hat{p}_k(x))$的**平方误差（square error,SE)**：
-
     $SE(x)=\frac{1}{2}\sum_{i=1}^k(\hat{p}_i(x)-I[c(x)=C_i])^2$  
-
   * 相应地，**均方误差（mean squared error， MSE）**为测试集中全部实例平方误差的均值：  $MSE(Te)=\frac{1}{|Te|}\sum_{x \in Te}SE(X)$  
 
 > 这种以概率估计量形式定义的误差在预测理论中广为使用，且被称为**布莱尔分数（Brier score）**。 
